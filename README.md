@@ -6,8 +6,8 @@ Was helpful to have this decoupled from general app logic because it requires ch
 
 ## Sample Usage:
 ``` javascript
-var ElectronUrlOpener = require('./vendors/ElectronUrlOpener/ElectronUrlOpener.js');
-ElectronUrlOpener.init(function(url) {
+var urlOpener = require('./vendors/electron-url-opener/index.js');
+urlOpener.init(function(url) {
     console.log(url);// eg. protocol://path/subpath/file.extension
 });
 ```
